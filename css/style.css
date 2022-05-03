@@ -4,61 +4,111 @@
     margin: 0;
     box-sizing: border-box;
 }
- img {
-     width: 100%;
+ 
      
      
  }
 
  /* Common */
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+ body{
+     font-family: sans-serif;
+ }
+
+/* Header */
  header {
      height: 70px;
      background-color: #ff5701;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
 
  }
- .flex {
+ nav{
      display: flex;
- }
- .img-logo{
-     width: 10%;
-     margin: 0 auto;
- }
- 
- .type{
-     width: 70%;
-     height: 70px;
-     align-items: center;
      justify-content: space-between;
-     margin: 0 auto;
- }
- .woman,.men,.childs{
-     color: white;
-     padding: 10px 5px;
-     margin-right: 50px;
+     align-items: center;
+     height: 100%;
  }
 
-i {
-    color: black;
-}
-.col-container{
-    width: 75%;
-    margin: 0 auto;
-
-}
-.col-1 {
-    flex-direction: column;
-}
-.logo-boolean {
-    justify-content: center;
-
+ul{
+    list-style-type: none;
 }
 
+}
+/* Menu */
+header ul {
+    display: flex;
+}
+.main-menu li{
+    margin-right: 10px;
+}
+.font li{
+    margin-left: 10px;
+}
+header a {
+    text-decoration: none;
+}
 
-.footer-boolando {
-    width: 50%;
-    height: 50%;
-    background-color: black;
+.logo-boolando  img {
+    height: 40px;
+    width: auto;
+}
+
+/* Main */
+main {
+    margin-top: 130px;
 }
 .col{
-    width: calc(100% / 3 );
+    border: 1px solid red;
+    width: calc((100% / 3) - 10px );
 }
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {margin-top: 30px;
+}
+
+.products-image{
+    background-color: pink;
+
+}
+ .hover-image {
+     display: none;
+ }
+
+ .products-image:hover .main-image{
+     display: none;
+ }
+
+ .products-image:hover .hover-image {
+    display: inline-block;
+}
+.heart {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    padding: 3px 7px;
+}
+.heart:hover {
+    color: red;
+    cursor: pointer;
+}
+
+    .labels {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+    }
+    
