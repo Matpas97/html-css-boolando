@@ -1,114 +1,176 @@
-/* Reset */
+/* RESET */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
- 
-     
-     
- }
-
- /* Common */
-.container{
-    width: 70%;
-    margin: 0 auto;
-}
-img{
-    width: 100%;
-}
- body{
-     font-family: sans-serif;
- }
 
 /* Header */
- header {
-     height: 70px;
-     background-color: #ff5701;
-     position: fixed;
-     width: 100%;
-     top: 0;
-     left: 0;
-
- }
- nav{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     height: 100%;
- }
-
-ul{
-    list-style-type: none;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
+header {
+    height: 60px;
+    background-color:  #ff7514;
 }
-/* Menu */
-header ul {
+main {
+    padding-bottom: 30px;
+
+}
+
+/* Header Left */
+.header-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    
+    
 }
-.main-menu li{
-    margin-right: 10px;
+.header-right i {
+    color: black;
 }
-.font li{
-    margin-left: 10px;
-}
-header a {
+.list {
+    display: flex;
     text-decoration: none;
 }
-
-.logo-boolando  img {
-    height: 40px;
-    width: auto;
+.list a {
+    text-decoration: none;
+    color: white;
+}
+.list li {
+    list-style-type: none;
+    padding: 22px 6px;
+}
+/* Header Center */
+.header-center {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.header-center img {
+    width: 15%;
+    margin-left: 200px;
+}
+/* Header Right */
+.header-right i {
+    color: white;
 }
 
 /* Main */
-main {
-    margin-top: 130px;
-}
-.col{
-    border: 1px solid red;
-    width: calc((100% / 3) - 10px );
-}
-.products{
+.col-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 35px;
 }
-.card {margin-top: 30px;
+.col {
+     width:calc( 34% - 32px );
+    
+}
+.col img {
+    width: 100%;
+}
+.euro-one {
+    color: red;
+}
+.euro-two {
+    text-decoration: line-through;
 }
 
-.products-image{
-    background-color: pink;
-
+/* Footer */
+footer {
+    height: 90px;
+    background-color: black;
+    border-bottom: 1px solid white;
+    
 }
- .hover-image {
-     display: none;
- }
+h4,h5 {
+    color: white;
+}
+h5 {
+    padding-top: 37px;
+    padding-left: 600px;
+}
 
- .products-image:hover .main-image{
-     display: none;
- }
+.information-left span {
+    color: white;
+}
+.all-info {
+    width: 70%;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
- .products-image:hover .hover-image {
-    display: inline-block;
+.fa-brands fa-square-twitter {
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+.card-image {
+    position: relative;
+    text-align: left;
+    color: red;
+}
+.span-img {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    color: white;
+    background-color: red;
+    padding: 5px 5px;
+}
+.span-img-due {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+    background-color: green;
+    padding: 5px 5px;
+}
+.span-img-quat {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    color: white;
+    background-color: green;
+    padding: 5px 5px;
+}
+.span-img-tre {
+    position: absolute;
+    bottom: 49px;
+    left: 0px;
+    color: white;
+    background-color: red;
+    padding: 3px 3px;
+}
+.card-imge img {
+    position: relative;  
+}
+/* Hover */
+.img-1-1 {
+    display: none;
+}
+.span-img-cin {
+    position: absolute;
+    bottom: 32px;
+    left: 0px;
+    color: white;
+    background-color: red;
+    padding: 3px 3px;
 }
 .heart {
-    font-size: 32px;
-    position: absolute;
-    top: 10px;
-    right: 0;
     background-color: white;
-    padding: 3px 7px;
+    color: black;
+    position: absolute;
+    bottom: 496px;
+    right: 0px;
+    padding: 5px 10px;
+   
 }
-.heart:hover {
-    color: red;
-    cursor: pointer;
-}
-
-    .labels {
-        position: absolute;
-        bottom: 40px;
-        left: 0;
-    }
-    
